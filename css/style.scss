@@ -1,0 +1,33 @@
+/*
+    MDvision theme with bootstrap and sass
+    Aurthour: Muhammad Azhar Hussain
+    Version: 0.0.1
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+/*BASE - Base style, mixins, veriables, and etc.*/
+
+@import "base/_variables.scss";
+@import "base/_mixins.scss";
+@import "base/_normalize.scss";
+@import "base/_base.scss";
+
+/*third-party*/
+@import "third-party/slick.scss";
+
+/*MODULES - Individuals site components */
+@import "module/_typography.scss";
+@import "module/_icons.scss";
+@import "module/_buttons.scss";
+@import "module/_sections.scss";
+@import "module/_components.scss";
+@import "module/_forms.scss";
+
+/*LAYOUTS - Page layout styles */
+@import "layout/_nav.scss";
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+
+/*MediaQueries*/
+@import "layout/_mediaqueries.scss";
+

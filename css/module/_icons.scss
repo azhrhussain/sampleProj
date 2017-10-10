@@ -1,0 +1,140 @@
+
+.partners-icon {
+    .box {
+        img {
+            filter: grayscale(100%);
+            transition: all 0.3s ease-out;
+        }
+
+        &:hover {
+            border-color: #dcf2ff;
+
+            img {
+                filter: grayscale(0%);
+                transition: all 0.3s ease-out;
+            }
+        }
+    }
+}
+
+.icon {
+    background-size: cover;
+    height: 70px;
+    width: 70px;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+.box {
+    .icon {
+        background-position: 0px 0px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    &:hover {
+        color: $primaryClr;
+        cursor: pointer;
+        border-color: #dcf2ff !important;
+
+        .icon {
+            background-position: 0px -70px;
+            transition: all 0.4s ease-in-out;
+        }
+    }
+}
+
+.speciality-icons {
+    .box:nth-child(1) .icon {
+        background: url(../images/prostate-cancer.png) no-repeat;
+    }
+
+    .box:nth-child(2) .icon {
+        background: url(../images/breast-cancer.png) no-repeat;
+    }
+
+    .box:nth-child(3) .icon {
+        background: url(../images/lung-cancer.png) no-repeat;
+    }
+
+    .box:nth-child(4) .icon {
+        background: url(../images/bladder-cancer.png) no-repeat;
+    }
+
+    .box:nth-child(5) .icon {
+        background: url(../images/colon-rectal-anal-cancers.png) no-repeat;
+    }
+
+    .box:nth-child(6) .icon {
+        background: url(../images/gynecologic-cancers.png) no-repeat;
+    }
+
+    .box:nth-child(7) .icon {
+        background: url(../images/head-neck-cancers.png) no-repeat;
+    }
+
+    .box:nth-child(8) .icon {
+        background: url(../images/brain-cancer.png) no-repeat;
+    }
+
+    .box:nth-child(9) .icon {
+        background: url(../images/spine-surgery.png) no-repeat;
+    }
+
+    .box:nth-child(10) .icon {
+        background: url(../images/ear-nose-throat.png) no-repeat;
+    }
+
+    .box:nth-child(11) .icon {
+        background: url(../images/pain-management.png) no-repeat;
+    }
+
+    .box:nth-child(12) .icon {
+        background: url(../images/gastrointestinal.png) no-repeat;
+    }
+
+    .box:nth-child(13) .icon {
+        background: url(../images/podiatry.png) no-repeat;
+    }
+
+    .box:nth-child(14) .icon {
+        background: url(../images/orthopedics.png) no-repeat;
+    }
+
+    .box:nth-child(15) .icon {
+        background: url(../images/urology.png) no-repeat;
+    }
+
+    .box:nth-child(16) .icon {
+        background: url(../images/ophthalmology.png) no-repeat;
+    }
+
+    .box:nth-child(17) .icon {
+        background: url(../images/general-surgery.png) no-repeat;
+    }
+
+    .box:nth-child(18) .icon {
+        background: url(../images/dental.png) no-repeat;
+    }
+
+    .box:nth-child(19) .icon {
+        background: url(../images/plastic-surgery.png) no-repeat;
+    }
+
+    .box {
+        .icon {
+            background-position: 0px 0px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        &:hover {
+            color: $primaryClr;
+            cursor: pointer;
+            border-color: #dcf2ff;
+
+            .icon {
+                background-position: 0px -70px;
+                transition: all 0.4s ease-in-out;
+            }
+        }
+    }
+}

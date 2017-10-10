@@ -1,0 +1,99 @@
+/*Mixin's*/
+@mixin border-radius($radius) {
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin add-border($size,$color,$position) {
+    @if $position =='all' {
+        border: $size solid $color;
+    }
+    @else if $position =='top' {
+        border-top: $size solid $color;
+    }
+    @else if $position =='right' {
+        border-right: $size solid $color;
+    }
+    @else if $position =='bottom' {
+        border-bottom: $size solid $color;
+    }
+    @else if $position =='left' {
+        border-left: $size solid $color;
+    }
+    @else if $position =='top-bottom' {
+        border-top: $size solid $color;
+        border-bottom: $size solid $color;
+    }
+    @else if $position =='right-left' {
+        border-right: $size solid $color;
+        border-left: $size solid $color;
+    }
+}
+
+@mixin add-background($color) {
+    background: $color;
+
+    @if $color == $lightColor {
+        color: #666666;
+    }
+    @else {
+        color: $primaryColor;
+    }
+}
+
+@mixin bigDextopMax {
+    @media (max-width: #{$bigDextopMax-width}) {
+        @content;
+    }
+}
+
+@mixin mdMinMax {
+     @media (min-width: #{$smMax + 1}) and (max-width: #{$bigDextopMax-width}) {
+        @content;
+    }
+}
+
+@mixin laptopMax {
+    @media (max-width: #{$lap-width}) {
+        @content;
+    }
+}
+
+@mixin xsMax {
+    @media (max-width: #{($smMin - 1px)}) {
+        @content;
+    }
+}
+
+@mixin smMax {
+    @media (max-width: #{$smMax}) {
+        @content;
+    }
+}
+
+@mixin mdMin {
+    @media (min-width: #{$smMax + 1}) {
+        @content;
+    }
+}
+
+@mixin smMin {
+    @media (min-width: #{$smMin}) {
+        @content;
+    }
+}
+
+@mixin largMin {
+    @media (min-width: #{$largScreen}) {
+        @content;
+    }
+}
+
+@mixin smMinMax {
+    @media (min-width: #{$smMin}) and (max-width: #{$smMax}) {
+        @content;
+    }
+}

@@ -1,0 +1,20 @@
+@include smMin {
+
+    .modal-lg {
+        width: 80%;
+    }
+}
+@include xsMax{
+
+   .lightBox .content {width: 77%;}
+}
+@include smMax{
+    .team-container {
+        min-height: initial;
+    }
+}
+@include mdMinMax{
+    .team-container {
+        min-height: 524px;
+    }
+}

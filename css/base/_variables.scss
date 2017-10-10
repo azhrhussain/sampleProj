@@ -1,0 +1,123 @@
+$primaryClr: #0277b7;
+$primaryTextClr: #fff;
+$primaryDarkClr: #104e8b;
+
+$lightClr: #848484;
+
+$secondaryClr: #00c9ea;
+
+
+/*banner backgrounds*/
+$revenue_cycle: url(../images/revenue-cycle.jpg);
+$cloud_base: url(../images/cloud-base.jpg) ;
+$imaging_lab: url(../images/labs.jpg);
+$data_migration: url(../images/data-migration.jpg);
+
+$all_pm_emr: url(../images/all-pmemr.jpg);
+$patient_portal: url(../images/patient-portal.jpg);
+$checkin_app: url(../images/checkin-app.jpg);
+
+$contact: url(../images/contact.jpg);
+$schedule: url(../images/schedule.jpg);
+$meaningful_use: url(../images/mu.jpg);
+
+/*Font colors*/
+$baseFontSize: 14px;
+$baseFontFamily: 'Open Sans', sans-serif;
+$baseFontColor: $lightClr;
+
+
+
+/*Nav */
+
+$navInverseBg: $primaryClr;
+$navInverseTextClr: $primaryTextClr;
+$navInverseFont: 1em;
+
+
+$navFont: 1.2em;
+$navBg: #fff; //
+$navColor: #343434; //
+$navHoverBg: $primaryClr;
+$navHoverColor: #fff;
+$navBorderColor: #8098b4;
+$navTopBg: "";
+$navTopShrinkBg: #8098b4;
+
+
+/*carousel-caption*/
+$captionBg: rgba(90, 90, 90, 0.5);
+$sliderBorder: #999999;
+
+/*about*/
+$aboutFooterBg: "";
+/*experties list*/
+$listExpcolor: #2d95f5;
+$iconColor: #343434;
+
+/*team*/
+$teamContainerBg: #f0f0f0;
+$teamContainerBorderColor: #dbdbdb;
+$teamBlueColor: #51a9d1;
+/*services*/
+$servicesBg: #ebebeb;
+$arrowColor: #bdbdbd;
+$borderColor: #a6a6a6; //
+
+/*circle*/
+$circleBgGry: #d8d8d8;
+/*squre*/
+$squreBorder: #f1f3f1;
+
+/*modaldialog*/
+$modalHeaderBg: #1b2e4e;
+$modalHeaderColor: #fff;
+
+$addressColor: #566fd4;
+
+$lightBoxBg: rgba(0,0,0, 0.8);
+
+/*form control color*/
+$darkMostColor: #2e2e2e;
+$darkBorder: #606060;
+/*theme 2*/
+$whiteTransprentImg: "../images/logo_bg.png";
+
+$primaryColorDark: #0c5687;
+
+$circleShadow: #d4ddeb;
+$primaryColor: #30a7fc; /*for button*/
+
+$secondaryColor: #a6a6a6;
+$blueColorLight: #a1bad8;
+
+$headerColor: #0c5687;
+$footerBg: #7e7e7e; //bg
+$socialBg: #fff;
+$socialText: #70788e;
+
+$lightColor: #ffffff;
+$darkColor: #363636; //
+
+
+/*normal color  2e2e2e footer 3f3f3f hedding 7593b7 nav 728399 nav border aea134 carisol bottom border 606060 footer top*/
+
+$white: #fff;
+$whiteTransparent: rgba(255, 255, 255, 0.5);
+$black: #000000;
+$blackTransparent: rgba(0, 0, 0, 0.5);
+$lightGray: #e7e7e7;
+$social: #ff0000;
+$footerColor: green;
+$headingUnder: "../images/heading_under.png";
+
+/*MediaQueries*/
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$smMin: 768px;
+$smMax: 991px;
+$bigDextopMax-width: 1199px;
+$lap-width: 1366px;
+$largScreen: 1400px;
+

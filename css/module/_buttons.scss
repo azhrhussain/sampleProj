@@ -1,0 +1,75 @@
+/*buttons*/
+
+
+.btn {
+    color: $primaryTextClr;
+    background-color: $primaryClr;
+    border: none;
+
+    &.btn-sm {
+        padding: 5px 20px;
+    }
+}
+
+.btn:hover, .btn:focus, .btn:active {
+    background-color: lighten($primaryClr,20%);
+    border: none;
+    color: $primaryTextClr;
+}
+
+
+.btn-dark{
+    color: $white;
+    background-color: lighten($darkMostColor,5%);
+}
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+    background-color: lighten($darkMostColor,20%);
+    border: none;
+    color: $white;
+}
+.btn.btn-white{
+
+    &:hover, &:active, &:focus{
+        color: $primaryClr !important;
+        background-color: darken(#fff, 10%);
+        
+    }
+} 
+
+.call-btn{
+    background-color: #3b9dde;
+    display: inline-block;
+    min-width: 270px;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    padding: 0.2em 1em;
+    box-shadow: 5px 5px 0px 0px rgba(215,215,215,1);
+    .call-number{display: none;}
+    &:hover, &:focus, &:active{
+        color: #fff;
+        text-decoration: none;
+      .call-text{display: none;}
+      .call-number{display: initial;}  
+
+        
+    }
+    
+}
+.btn-scrollTop{
+	display:none;
+	background-color: $primaryClr;
+	color: $primaryTextClr;
+	font-size: 1em;
+	font-weight:700;
+	padding: 5px 15px;
+	position: fixed;
+	bottom: 20px;
+	right: 0;
+	
+	&:hover, &:focus, &:active{
+        text-decoration: none;
+        color: $primaryTextClr;
+    }
+	
+	}

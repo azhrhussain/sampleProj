@@ -1,0 +1,30 @@
+
+p {
+    line-height: 1.8;
+}
+.heading{
+    font-size: 1.7em;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+
+.heading-primary {
+    color: $primaryClr;
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 1em;
+}
+h1{
+    font-size: 1.8em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+@include xsMax {
+    h2 {
+        font-size: 95%;
+    }
+
+    h1 {
+        font-size: 190%;
+    }
+}

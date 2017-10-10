@@ -1,0 +1,26 @@
+
+body {
+    font-family: $baseFontFamily;
+    font-size: $baseFontSize;
+    color: $baseFontColor;
+    line-height: 1.8;
+
+    @include xsMax {
+        font-size: $baseFontSize - 2px;
+    }
+}
+
+a {
+    color: $primaryColor;
+}
+
+ul li {
+    list-style: none;
+}
+
+input, textarea, button {
+    @include border-radius(0px);
+}
+
+
+

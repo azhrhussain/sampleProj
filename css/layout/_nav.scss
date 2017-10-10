@@ -1,0 +1,135 @@
+/*Nav*/
+/*nav inverse*/
+
+.navbar.navbar-inverse {
+    background-color: $navInverseBg;
+    width: 100%;
+    min-height: initial;
+    border-color: $navInverseBg;
+
+    .navbar-nav {
+        margin: 0.1em 0;
+
+        & > li > a, & > .active > a {
+            color: $navInverseTextClr !important;
+            font-size: $navInverseFont;
+            text-transform: capitalize;
+            padding: 5px 15px;
+
+
+            &:focus, &:hover {
+                color: $navHoverBg !important;
+                background-color: $navHoverColor !important;
+            }
+        }
+    }
+}
+
+
+
+.navbar {
+    border-radius: 0px;
+    margin-bottom: -2px;
+
+    &.navbar-default {
+        background-color: $navBg;
+        width: 100%;
+
+        .navbar-nav {
+            & > li > a, & > .active > a {
+                color: $navColor;
+                font-size: $navFont;
+                text-transform: capitalize;
+                padding: 0.5em 1.6em;
+                line-height: 1.5em;
+
+                &:focus, &:hover {
+                    color: $navHoverColor !important;
+                    background-color: $navHoverBg !important;
+                }
+            }
+
+            & > li {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+.logo {
+    width: 200px;
+    margin-top: 0.6em;
+}
+
+
+
+
+
+.nav-shrink {
+    -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-brand, .nav-shrink .navbar-brand {
+}
+
+
+
+
+@media (min-width: 768px) and (max-width:991px) {
+    .navbar-nav > li > a {
+        font-size: 12px;
+    }
+
+    .navbar.navbar-default .navbar-nav > li > a, .navbar.navbar-default .navbar-nav > .active > a {
+        padding: 0.25em 0.6em;
+    }
+}
+
+@include xsMax {
+    .logo {
+        width: 120px;
+    }
+
+    .my-dropdown:hover .my-dropdown-menu {
+    position: relative;
+    transform: translateY(0px);
+    z-index: 2;
+    width: 100%;
+}
+    .navbar.navbar-default .navbar-nav > li {
+    padding-bottom: 0;
+}
+
+    .navbar.navbar-default .container{
+        padding: 0;
+    }
+    .container>.navbar-header, .container>.navbar-collapse{
+        margin: 0;
+    }
+    #navbar-collapse-1{
+        overflow:hidden;
+    }
+}
+
+@include smMin {
+    .navbar-nav {
+        /*margin-top: 8px;
+        margin-bottom: 15px;*/
+        margin-top: 0px;
+        margin-bottom: -1px;
+        /*li {
+            padding-bottom: 20px;
+        }*/
+    }
+
+    .navbar-default {
+        padding-top: 8px;
+    }
+}
